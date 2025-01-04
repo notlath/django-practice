@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Note.css";
 
 function Note({ note, onDelete }) {
   const forrmattedDate = new Date(note.created_at).toLocaleDateString("en-US");
@@ -13,3 +14,5 @@ function Note({ note, onDelete }) {
     </div>
   );
 }
+
+export default Note;
